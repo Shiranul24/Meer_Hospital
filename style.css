@@ -1,0 +1,293 @@
+:root {
+    --primary-color: #254E9B;
+    --accent-color: #C4D4F2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2.5rem;
+}
+
+nav > img {
+    width: 10rem;
+}
+
+nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav > a {
+    text-decoration: none;
+    color: inherit;
+    border: 0.0625rem solid black;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+}
+
+section {
+    padding: 2rem 4rem;
+}
+
+section.accent {
+    background-color: var(--accent-color);
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+.hero > div {
+    max-width: 28rem;
+}
+
+.hero p {
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.hero p::before {
+    display: inline-block;
+    content: "";
+    width: 2rem;
+    border-bottom: 0.0625rem solid rgb(158, 158, 158);
+    vertical-align: middle;
+    margin-right: 0.25rem;
+}
+
+.hero h1 {
+    font-size: 42pt;
+    margin-bottom: 1rem;
+}
+
+.hero img {
+    width: 32rem;
+}
+
+.hero button {
+    font: inherit;
+    padding: 0.75rem 0.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.hero button:hover {
+    cursor: pointer;
+}
+
+.sponsors {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.info {
+    text-align: center;
+}
+
+.info > h2, .about-us h2 {
+    font-size: 14pt;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.info > p, .about-us .main {
+    font-size: 32pt;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    max-width: 48rem;
+    margin-inline: auto;
+}
+
+.info > .card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    margin-bottom: 5rem;
+}
+
+.info .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 18rem;
+    border: 0.0625rem solid black;
+    border-radius: 0.25rem;
+    box-shadow: 0.25rem 0.5rem 0.5rem rgb(158, 158, 158);
+    padding: 2rem 1rem;
+    height: 20rem;
+    gap: 1rem;
+}
+
+.info .card > .card-heading {
+    color: var(--primary-color);
+    font-size: 32pt;
+}
+
+.info .card > .card-body {
+    font-size: 16pt;
+    font-weight: 600;
+}
+
+.video {
+    border-radius: 1rem;
+}
+
+.video:hover {
+    cursor: pointer;
+    box-shadow: 0.25rem 0.5rem 0.5rem rgb(158, 158, 158);
+}
+
+.about-us {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 10rem;
+    padding-inline: 10rem;
+    padding-top: 6rem;
+}
+
+.about-us .main {
+    font-size: 32pt;
+    margin-bottom: 1rem;
+}
+
+.about-us p:not(.main) {
+    text-align: center;
+}
+
+.about-us .button-group {
+    margin-top: 1rem;
+}
+
+.about-us button {
+    font: inherit;
+    padding: 0.75rem 0.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: var(--primary-color);
+    color: white;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.about-us button:nth-of-type(2) {
+    color: inherit;
+    background-color: white;
+    border: 0.0625rem solid black;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.testimonial-container .card {
+    border-radius: 0.5rem;
+}
+
+.contact-us {
+    margin: 10rem;
+    padding: 5rem;
+    background-color: var(--accent-color);
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+.contact-us h2 {
+    display: inline-block;
+    font-size: 24pt;
+    width: 30rem;
+    margin-bottom: 1rem;
+}
+
+.contact-us p {
+    font-weight: 600;
+    font-size: larger;
+}
+
+.contact-us form {
+    margin-top: 1rem;
+    padding-block: 3rem;
+}
+
+.contact-us input {
+    display: inline-block;
+    padding-inline: 0.5rem;
+    padding-block: 0.75rem;
+    margin-right: 1rem;
+    min-width: 15rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.contact-us input[type="submit"] {
+    background-color: var(--primary-color);
+    font: inherit;
+    color: white;
+    border: none;
+    cursor: pointer;
+    min-width: 10rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem 5rem;
+    font-size: 16pt;
+}
+
+footer img {
+    width: 10rem;
+}
+
+footer div:first-child {
+    max-width: 15rem;
+}
+
+footer div:first-child p {
+    margin-block: 1rem;
+}
+
+footer div:not(div:first-child) p {
+    font-weight: 700;
+    font-size: larger;
+}
